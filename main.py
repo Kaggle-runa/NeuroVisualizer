@@ -80,7 +80,7 @@ def main():
     epochs = st.sidebar.number_input("エポック数", 10, 500, step=10, value=100)
     batch_size = st.sidebar.number_input("バッチサイズ", 8, 256, step=8, value=64)
     activation_select = st.sidebar.selectbox(
-        "活性化関数の選択", ("シグモイド関数", "ハイパボリックタンジェント関数", "reLu関数"))
+        "活性化関数の選択", ("シグモイド関数", "ハイパボリックタンジェント関数", "ReLu関数"))
 
     if activation_select == "SGD":
         activation = "sigmoid"
